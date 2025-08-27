@@ -1,0 +1,77 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+/* Add this CSS to center the submenu arrows */
+
+/* Show and center submenu arrows */
+.ant-menu-horizontal .ant-menu-submenu-arrow {
+  display: inline-block !important;
+  opacity: 1 !important;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0 !important;
+}
+
+/* Ensure submenu title has space for arrow */
+.dashboard-menu .ant-menu-submenu-title {
+  padding-right: 24px !important;
+  position: relative;
+}
+
+/* Arrow rotation states */
+.ant-menu-horizontal .ant-menu-submenu .ant-menu-submenu-arrow {
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.ant-menu-horizontal .ant-menu-submenu-open .ant-menu-submenu-arrow {
+  transform: translateY(-50%) rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+/* Arrow icon styling */
+.ant-menu-horizontal .ant-menu-submenu-arrow::before,
+.ant-menu-horizontal .ant-menu-submenu-arrow::after {
+  width: 6px;
+  height: 1.5px;
+  background: currentColor;
+}
+
+/* Make arrow more visible */
+.ant-menu-submenu-title .ant-menu-submenu-arrow {
+  color: inherit;
+  font-size: 10px;
+}
