@@ -7,6 +7,9 @@ import { APP_PREFIX_PATH } from "@/config/app-config";
 // import FAQs from "@/pages/FAQs";
 import Login from "@/pages/Autth/Login";
 import Dashboard from "@/pages/Dashboard";
+import BidInvitation from "@/pages/InnerPages/BidInvitation/BidInvitation";
+import RFPReview from "@/pages/InnerPages/RFPReview/RFPReview";
+import TaskTrack from "@/pages/InnerPages/TaskTrack/TaskTrack";
 import Marketing from "@/pages/Marketing";
 
 export const PUBLIC_ROUTES = [
@@ -24,9 +27,19 @@ export const PROTECTED_ROUTES = [
         Component: Dashboard
     },
     {
-        key: 'marketing',
-        path: `${APP_PREFIX_PATH}/marketing`,
-        Component: Marketing
+        key: 'task-track',
+        path: `${APP_PREFIX_PATH}/task-track`,
+        Component: TaskTrack
+    },
+    {
+        key: 'rfp-review',
+        path: `${APP_PREFIX_PATH}/rfp-review`,
+        Component: RFPReview
+    },
+    {
+        key: 'bid-invitation',
+        path: `${APP_PREFIX_PATH}/bid-invitation`,
+        Component: BidInvitation
     },
     {
         key: 'campaign',

@@ -18,7 +18,8 @@ body {
   width: 100%;
   max-width: 100%;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif; /* Default text font */
+  font-family: 'Roboto', sans-serif;
+  /* Default text font */
 }
 
 
@@ -28,6 +29,7 @@ body {
   margin-bottom: 0px !important;
 
 }
+
 .ant-typography h1,
 .ant-typography h2,
 .ant-typography h3,
@@ -37,3 +39,20 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 
+
+
+.checkbox-req .ant-form-item {
+  margin-bottom: 0px !important;
+}
+
+.go-back {
+  font-size: 14px;
+  height: 32px;
+  padding: 0px 27px !important;
+  border-radius: 40px !important;
+}
+
+.ant-btn-default:hover {
+  border: 1px solid #4A67B3 !important;
+  color: #4A67B3 !important;
+}

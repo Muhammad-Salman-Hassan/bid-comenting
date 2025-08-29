@@ -1,4 +1,4 @@
-import { FaChartSimple } from "react-icons/fa6";
+import { FaCalendar, FaChartSimple, FaGlasses, FaTeamspeak } from "react-icons/fa6";
 import { FiSettings, FiHelpCircle } from "react-icons/fi";
 
 const APP_PREFIX_PATH = '/app';
@@ -12,6 +12,27 @@ const mainNavigation = [
         path: `${APP_PREFIX_PATH}/dashboard`,
         title: 'Dashboard',
         icon: FaChartSimple,
+        submenu: [],
+    },
+    {
+        key: 'task-track',
+        path: `${APP_PREFIX_PATH}/task-track`,
+        title: 'Task Track',
+        icon: FaTeamspeak,
+        submenu: [],
+    },
+    {
+        key: 'rfp-review',
+        path: `${APP_PREFIX_PATH}/rfp-review`,
+        title: 'Rview RFP',
+        icon: FaGlasses,
+        submenu: [],
+    },
+    {
+        key: 'bid-invitation',
+        path: `${APP_PREFIX_PATH}/bid-invitation`,
+        title: 'Bid Inviatation',
+        icon: FaCalendar,
         submenu: [],
     },
 ];

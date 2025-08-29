@@ -1,4 +1,5 @@
 import { CardHeader } from '@/components/SharedComponent/CardHeader/CardHeader'
+import ProjectStepperForm from '@/components/UtilityComponents/ProjectSetupStepper/ProjectStepper'
 import { Flex } from 'antd'
 import React from 'react'
 
@@ -15,6 +16,8 @@ const Dashboard = () => {
           Cardwidth={"90%"}
         />
       </Flex>
+
+      <ProjectStepperForm/>
     </div>
   )
 }

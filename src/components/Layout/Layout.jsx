@@ -263,11 +263,7 @@ export default function DashBoardLayout() {
                 .dashboard-sidebar {
                     background: #fff;
                     box-shadow: 2px 0 8px rgba(0,0,0,0.06);
-                    position: relative;
-                    z-index: 1001;
-                    display: flex;
-                    flex-direction: column;
-                    height: 100vh;
+                    
                 }
 
                 .logo-section {
@@ -486,10 +482,10 @@ export default function DashBoardLayout() {
                 }
 
                 .dashboard-content {
-                    
+                    background-color:#FBFBFB !important;
                     padding: 24px;
                     background: #fff;
-                    border-radius: 8px;
+                    
                     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
                     min-height: calc(100vh - 112px);
                 }
